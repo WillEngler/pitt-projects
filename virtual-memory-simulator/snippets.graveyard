@@ -1,0 +1,38 @@
+    class Leaf(object):
+        #10 bits to address the second level of the page table
+        NUMPTES = 1024
+
+        def __init__(self):
+            #Create dictionary of PTEs initialized to None for each index
+            self.level2 = {key: None for key in range(1,Leaf.NUMPTES + 1)}
+            #Track the number of valid entries. When it reaches 0, we can delete this leaf
+            self.num_valid_entries = 0
+
+            {key: None for key in range(1,PageTable.NUMENTRIES + 1)}
+
+            '''
+class AcceptanceTests(unittest.TestCase):
+    def setUp(self):
+        self.pTable = PageTable(8)
+        self.trace_list = file_to_trace_list('sample.trace')
+        self.expected_result = Result(frames=8,accesses=4,writes=1,faults=4)
+
+    def tearDown(self):
+        del self.pTable
+
+    def test_opt_small(self):
+        opt_result = self.pTable.run(self.trace_list,optimal)
+        self.assertEqual(self.expected_result,opt_result)
+
+    def test_clock_small(self):
+        clock_result = self.pTable.run(self.trace_list,clock)
+        self.assertEqual(self.expected_result,clock_result)
+
+    def test_random_small(self):
+        random_result = self.pTable.run(self.trace_list,random)
+        self.assertEqual(self.expected_result,random_result)
+
+    def test_lru_small(self):
+        lru_result = self.pTable.run(self.trace_list,clock)
+        self.assertEqual(self.expected_result,lru_result)
+'''

@@ -1,0 +1,48 @@
+['vmsim', '-n', '8', '-a', 'nru', '-r', 750, 'gcc.trace']
+Number of frames:		8
+Total memory accesses:		1000000
+Total page faults:		249160
+Total writes to disk:		72007
+
+['vmsim', '-n', '32', '-a', 'nru', '-r', 750, 'gcc.trace']
+Number of frames:		32
+Total memory accesses:		1000000
+Total page faults:		127768
+Total writes to disk:		44623
+
+['vmsim', '-n', '64', '-a', 'nru', '-r', 750, 'gcc.trace']
+Number of frames:		64
+Total memory accesses:		1000000
+Total page faults:		67733
+Total writes to disk:		15339
+
+['vmsim', '-n', '128', '-a', 'nru', '-r', 750, 'gcc.trace']
+Number of frames:		128
+Total memory accesses:		1000000
+Total page faults:		47472
+Total writes to disk:		10740
+
+['vmsim', '-n', '8', '-a', 'nru', '-r', 1000, 'gcc.trace']
+Number of frames:		8
+Total memory accesses:		1000000
+Total page faults:		250395
+Total writes to disk:		72551
+
+['vmsim', '-n', '32', '-a', 'nru', '-r', 1000, 'gcc.trace']
+Number of frames:		32
+Total memory accesses:		1000000
+Total page faults:		133580
+Total writes to disk:		49153
+
+['vmsim', '-n', '64', '-a', 'nru', '-r', 1000, 'gcc.trace']
+Number of frames:		64
+Total memory accesses:		1000000
+Total page faults:		75658
+Total writes to disk:		21749
+
+['vmsim', '-n', '128', '-a', 'nru', '-r', 1000, 'gcc.trace']
+Number of frames:		128
+Total memory accesses:		1000000
+Total page faults:		46084
+Total writes to disk:		9937
+
